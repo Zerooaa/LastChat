@@ -1,0 +1,42 @@
+{
+  "lookup": {
+    "rules": {
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"inquire_schedule\"}}]": "utter_inquire_schedule",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"inquire_schedule\"}}, {\"prev_action\": {\"action_name\": \"utter_inquire_schedule\"}, \"user\": {\"intent\": \"inquire_schedule\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"inquire_requirements\"}}]": "utter_inquire_requirements",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"inquire_requirements\"}}, {\"prev_action\": {\"action_name\": \"utter_inquire_requirements\"}, \"user\": {\"intent\": \"inquire_requirements\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"inquire_credibility\"}}]": "utter_inquire_credibility",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"inquire_credibility\"}}, {\"prev_action\": {\"action_name\": \"utter_inquire_credibility\"}, \"user\": {\"intent\": \"inquire_credibility\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"inquire_hours\"}}]": "utter_inquire_hours",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"inquire_hours\"}}, {\"prev_action\": {\"action_name\": \"utter_inquire_hours\"}, \"user\": {\"intent\": \"inquire_hours\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"inquire_costs\"}}]": "utter_inquire_costs",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"inquire_costs\"}}, {\"prev_action\": {\"action_name\": \"utter_inquire_costs\"}, \"user\": {\"intent\": \"inquire_costs\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"inquire_refund_policy\"}}]": "utter_inquire_refund_policy",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"inquire_refund_policy\"}}, {\"prev_action\": {\"action_name\": \"utter_inquire_refund_policy\"}, \"user\": {\"intent\": \"inquire_refund_policy\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"inquire_courses\"}}]": "utter_inquire_courses",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"inquire_courses\"}}, {\"prev_action\": {\"action_name\": \"utter_inquire_courses\"}, \"user\": {\"intent\": \"inquire_courses\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"inquire_location\"}}]": "utter_inquire_location",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"inquire_location\"}}, {\"prev_action\": {\"action_name\": \"utter_inquire_location\"}, \"user\": {\"intent\": \"inquire_location\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}]": "utter_goodbye",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}, {\"prev_action\": {\"action_name\": \"utter_goodbye\"}, \"user\": {\"intent\": \"goodbye\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"inquire_instructor\"}}]": "utter_inquire_instructor",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"inquire_instructor\"}}, {\"prev_action\": {\"action_name\": \"utter_inquire_instructor\"}, \"user\": {\"intent\": \"inquire_instructor\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"inquire_payment_modes\"}}]": "utter_inquire_payment_modes",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"inquire_payment_modes\"}}, {\"prev_action\": {\"action_name\": \"utter_inquire_payment_modes\"}, \"user\": {\"intent\": \"inquire_payment_modes\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"greet\"}}]": "utter_greet",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"greet\"}}, {\"prev_action\": {\"action_name\": \"utter_greet\"}, \"user\": {\"intent\": \"greet\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"inquire_payment\"}}]": "utter_inquire_payment",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"inquire_payment\"}}, {\"prev_action\": {\"action_name\": \"utter_inquire_payment\"}, \"user\": {\"intent\": \"inquire_payment\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"inquire_contact\"}}]": "utter_inquire_contact",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"inquire_contact\"}}, {\"prev_action\": {\"action_name\": \"utter_inquire_contact\"}, \"user\": {\"intent\": \"inquire_contact\"}}]": "action_listen"
+    },
+    "rule_only_slots": [],
+    "rule_only_loops": [],
+    "rules_for_loop_unhappy_path": {},
+    "rules_not_in_stories": [
+      "predicting default action with intent restart",
+      "predicting default action with intent session_start",
+      "predicting default action with intent back"
+    ]
+  }
+}

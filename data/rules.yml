@@ -1,0 +1,72 @@
+version: "3.1"
+
+rules:
+- rule: Greet user
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: Goodbye user
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Provide hours of operation
+  steps:
+  - intent: inquire_hours
+  - action: utter_inquire_hours
+
+- rule: Provide course information
+  steps:
+  - intent: inquire_courses
+  - action: utter_inquire_courses
+
+- rule: Provide cost information
+  steps:
+  - intent: inquire_costs
+  - action: utter_inquire_costs
+
+- rule: Provide payment modes information
+  steps:
+  - intent: inquire_payment_modes
+  - action: utter_inquire_payment_modes
+
+- rule: Provide payment information
+  steps:
+  - intent: inquire_payment
+  - action: utter_inquire_payment
+
+- rule: Provide refund policy information
+  steps:
+  - intent: inquire_refund_policy
+  - action: utter_inquire_refund_policy
+
+- rule: Provide requirements information
+  steps:
+  - intent: inquire_requirements
+  - action: utter_inquire_requirements
+
+- rule: Provide contact information
+  steps:
+  - intent: inquire_contact
+  - action: utter_inquire_contact
+
+- rule: Provide scheduling information
+  steps:
+  - intent: inquire_schedule
+  - action: utter_inquire_schedule
+
+- rule: Provide instructor information
+  steps:
+  - intent: inquire_instructor
+  - action: utter_inquire_instructor
+
+- rule: Provide location information
+  steps:
+  - intent: inquire_location
+  - action: utter_inquire_location
+
+- rule: Provide credibility information
+  steps:
+  - intent: inquire_credibility
+  - action: utter_inquire_credibility

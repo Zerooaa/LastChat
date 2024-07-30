@@ -1,0 +1,752 @@
+version: "3.1"
+
+nlu:
+  - intent: greet
+    examples: |
+      - hey
+      - hello
+      - hi
+      - hello there
+      - good morning
+      - good evening
+      - hey there
+      - good afternoon
+      - hi there
+      - howdy
+      - what's up?
+      - yo
+      - hey, what's going on?
+      - hello, how are you?
+      - hi, nice to meet you
+      - good day
+      - greetings
+      - hey, good to see you
+      - hey, how's everything?
+      - hiya
+      - Hey, how's it going?
+      - What's new?
+      - Hello, anyone there?
+      - Hi, can I ask a question?
+      - Hello, I need some information
+      - Hi, can you help me?
+      - Hey, good day to you
+      - How's it going?
+      - Hi, can I get some help?
+      - Hey, I'm looking for some information
+      - How are you doing today?
+      - Hello, I'm looking for some help
+      - Hey, can you assist me?
+      - Good to see you
+      - Hi, I need some information
+      - Hey there, can you answer a question?
+      - Hi, I have a query
+      - Hello, I hope you're well
+      - Hi, can I speak to someone?
+      - Hello, can you help with something?
+
+  - intent: goodbye
+    examples: |
+      - goodbye
+      - bye
+      - see you later
+      - good night
+      - have a nice day
+      - see you around
+      - bye bye
+      - take care
+      - later!
+      - see ya!
+      - I'm out
+      - catch you later
+      - peace out
+      - have a good one
+      - until next time
+      - farewell
+      - I'm off
+      - talk to you soon
+      - see you next time
+      - all the best
+      - I'm leaving now, bye!
+      - Catch you later
+      - See you soon
+      - Have a good day!
+      - I'll talk to you later
+      - Until next time, bye
+      - I'm signing off, bye!
+      - See you again
+      - Goodbye for now
+      - Take care, goodbye
+      - I'll catch up with you later
+      - So long!
+      - I've got to go, bye
+      - It was nice talking to you, bye
+      - I have to leave now, goodbye
+      - See you next time
+      - I have to go, see you later
+      - Parting ways now, goodbye
+      - Have a pleasant day, goodbye
+      - Signing off now, bye!
+
+  - intent: affirm
+    examples: |
+      - yes
+      - indeed
+      - of course
+      - that sounds good
+      - correct
+      - absolutely
+      - definitely
+      - sure
+      - exactly
+      - that's right
+      - I agree
+      - you got it
+      - certainly
+      - right on
+      - totally
+      - yup
+      - for sure
+      - affirmative
+      - you bet
+      - no doubt
+      - I'm in
+      - true
+      - yeah
+      - agreed
+      - that's correct
+      - Absolutely
+      - Sure thing
+      - I totally agree
+      - You betcha
+      - For certain
+      - 100% yes
+      - You got that right
+      - No doubt about it
+      - Without a doubt
+      - Definitely yes
+      - Without question
+      - For sure, yes
+      - Absolutely correct
+      - Certainly
+      - Yes, indeed
+      - That’s true
+      - I’m on board with that
+      - Yes, of course
+      - That’s absolutely right
+      - Totally agree
+
+  - intent: deny
+    examples: |
+      - no
+      - never
+      - I don't think so
+      - absolutely not
+      - nope
+      - no way
+      - not at all
+      - I disagree
+      - negative
+      - no chance
+      - not really
+      - I don't believe so
+      - that's not right
+      - not quite
+      - sorry, no
+      - I can't agree
+      - no sir
+      - nah
+      - out of the question
+      - not in a million years
+      - that's incorrect
+      - not happening
+      - no, thanks
+      - I don't agree
+      - Not a chance
+      - Absolutely not
+      - Nope, sorry
+      - I don't think so
+      - No way, Jose
+      - Definitely not
+      - No, that's wrong
+      - I don't agree with that
+      - That’s not true
+      - I can't say yes to that
+      - Not really
+      - I have to disagree
+      - That’s not correct
+      - No, definitely not
+      - That’s not true
+      - Absolutely no
+      - Not at all, sorry
+      - No, that’s wrong
+      - I can’t agree with that
+      - That’s not accurate
+
+  - intent: inquire_hours
+    examples: |
+      - What are your hours of operation?
+      - When are you open?
+      - What are your business hours?
+      - Can you tell me your opening hours?
+      - When do you close?
+      - What time does your driving school open and close?
+      - Can I know the working hours for the driving school?
+      - Are you open on weekends?
+      - What time do you start and finish each day?
+      - Do you operate on holidays?
+      - Are your hours the same every day?
+      - Is there a specific time when you're less busy?
+      - Can I come in after work hours?
+      - Do you have evening classes?
+      - Are you open early in the morning?
+      - What time is the last class of the day?
+      - How late are you open?
+      - Do you have different hours for different courses?
+      - What are your weekend hours?
+      - Are you open 7 days a week?
+      - What are your hours on public holidays?
+      - Do your hours change seasonally?
+      - Are you open during lunch hours?
+      - Can I schedule a class after regular hours?
+      - What are your hours during holidays?
+      - When do you open on weekends?
+      - Are your hours different during the summer?
+      - Can I book a lesson in the evening?
+      - What are your hours of operation on weekdays?
+      - Do you have early morning classes?
+      - Are there any days you're closed?
+      - Can I schedule a lesson after work?
+      - When do you close during the week?
+      - What time do you open on Saturdays?
+      - What are your holiday hours?
+      - Do your hours change during the summer?
+      - Are you open late?
+      - When does your office open?
+      - What are your weekend hours?
+      - Is your schedule the same every day?
+      - Are you open on public holidays?
+      - Can I come in the evening?
+      - When do you start classes?
+      - What time do you close during the week?
+
+  - intent: inquire_courses
+    examples: |
+      - What driving courses do you offer?
+      - Can you tell me about your driving lessons?
+      - What types of driving courses are available?
+      - Do you have defensive driving courses?
+      - What courses are offered?
+      - What's the available courses?
+      - Hours per course?
+      - Can you provide details on the driving courses you have?
+      - Are there different levels of driving courses available?
+      - Do you offer both manual and automatic transmission courses?
+      - How long does each course last?
+      - Are there weekend courses available?
+      - Do you have a beginner's course?
+      - Can you tell me more about your advanced driving courses?
+      - Do you offer any special courses like for elderly drivers?
+      - Are there any online driving courses available?
+      - Do you provide a practice driving course?
+      - What is included in the theoretical course?
+      - Do you have a course for international drivers?
+      - Are there any refresher courses available?
+      - What is the duration of each driving session?
+      - Are your courses certified?
+      - Do you offer one-on-one lessons?
+      - Are there any crash courses available?
+      - Do you have a winter driving course?
+      - Do you offer a basic driving course?
+      - Can you tell me about your advanced driving lessons?
+      - What courses do you have for new drivers?
+      - Do you provide night driving courses?
+      - Are there any special courses for nervous drivers?
+      - What kind of courses do you have for teenagers?
+      - Do you offer refresher courses?
+      - Can you explain the difference between your courses?
+      - Are there courses available for older drivers?
+      - What driving courses do you recommend for beginners?
+      - Do you offer courses for beginners?
+      - What advanced driving lessons do you offer?
+      - Are there courses for teens?
+      - Can you explain your defensive driving course?
+      - Do you provide night driving lessons?
+      - What special courses do you have?
+      - Is there a course for first-time drivers?
+      - Can you tell me about your theory lessons?
+      - Are there refresher courses available?
+      - Do you offer online driving courses?
+
+  - intent: inquire_costs
+    examples: |
+      - How much do driving lessons cost?
+      - What is the price for a driving course?
+      - Can you tell me the cost of your courses?
+      - How much does it cost for driving lessons?
+      - What are the fees for your driving lessons?
+      - Can I get a breakdown of the costs for each course?
+      - Are there any additional fees I should be aware of?
+      - Do you offer any discounts or promotions?
+      - What is the total cost for the full driving program?
+      - Are there different prices for different courses?
+      - How much is the practical driving course?
+      - Is there a registration fee?
+      - Are there any hidden costs?
+      - Can I pay in installments without extra charges?
+      - Are the costs the same for manual and automatic courses?
+      - What is your most affordable course?
+      - Are there package deals available?
+      - How much does the theory course cost?
+      - Do you have a payment plan?
+      - Are there any extra costs for weekend classes?
+      - What is the fee structure for your courses?
+      - Do you offer group discounts?
+      - Are there any scholarships available?
+      - How much do I need to pay upfront?
+      - Is there a fee for rescheduling classes?
+      - Can you give me a quote for your driving courses?
+      - What is the cost for a single driving lesson?
+      - How much do you charge for an intensive driving course?
+      - Are there any discounts for multiple lessons?
+      - What are your most affordable driving lessons?
+      - Is there an extra cost for weekend classes?
+      - Do you offer any promotional rates?
+      - How much does your premium driving course cost?
+      - Are the fees different for manual and automatic cars?
+      - What is the total cost for a full driving program?
+      - How much does each driving lesson cost?
+      - Are there any discounts available?
+      - What is the fee for weekend classes?
+      - Do you offer a breakdown of your costs?
+      - Are there any hidden charges?
+      - Can I get a quote for a full course?
+      - How much is your premium course?
+      - Are there extra costs for manual transmission lessons?
+      - What are the fees for evening classes?
+      - Is there a registration fee?
+
+  - intent: inquire_payment_modes
+    examples: |
+      - What are your modes of payment?
+      - Can I pay for lessons in installments?
+      - Do you accept credit cards?
+      - Is online payment available?
+      - What payment methods do you accept?
+      - Are there multiple payment options for your courses?
+      - Can I pay via mobile banking?
+      - Do you accept cash payments?
+      - Is it possible to pay with a debit card?
+      - Can I pay through PayPal?
+      - Are there any extra charges for using certain payment methods?
+      - Can I pay using a bank transfer?
+      - Is payment through GCash available?
+      - Do you offer automatic payment plans?
+      - Can I pay with a check?
+      - What is the easiest way to pay?
+      - Do you have a secure payment gateway?
+      - Are installment payments interest-free?
+      - Can I pay in person at your office?
+      - Are there any discounts for upfront payments?
+      - Can I pay via cryptocurrency?
+      - Is there an option to pay via QR code?
+      - Do you accept payments through third-party apps?
+      - Can I pay monthly?
+      - Is there a contactless payment option?
+      - Can I use a credit card to pay for my lessons?
+      - Do you accept online payments?
+      - Can I pay for my driving course with a debit card?
+      - Is cash payment an option?
+      - Are there any extra charges for using credit cards?
+      - Can I pay through mobile banking apps?
+      - Do you accept PayPal?
+      - Is there a payment plan available?
+      - Do you offer discounts for early payments?
+      - Do you accept credit card payments?
+      - Can I pay using a debit card?
+      - Is mobile payment an option?
+      - Can I make a bank transfer?
+      - Do you accept checks?
+      - Are installment payments available?
+      - Can I pay through your website?
+      - Is there a discount for paying in full?
+      - Can I pay with cryptocurrency?
+
+  - intent: inquire_payment
+    examples: |
+      - Can I pay in installments?
+      - Are installment plans available for all courses?
+      - Do you accept installments?
+      - Is it possible to pay the fees in parts?
+      - How do your installment plans work?
+      - Are there any additional charges for paying in installments?
+      - Can you explain your payment plan options?
+      - What is the down payment for the installment plan?
+      - Can I split the payment into monthly installments?
+      - Do you have a zero-interest installment plan?
+      - How many installments can I make?
+      - Are there any penalties for late payments?
+      - Can I change my payment plan after starting the course?
+      - What documents are needed for installment payments?
+      - Is there a minimum amount for installment plans?
+      - How do I sign up for an installment plan?
+      - Do I need to pay anything upfront?
+      - Are installment plans flexible?
+      - Can I make extra payments to pay off the installment plan faster?
+      - Do you offer installment plans for online courses as well?
+      - What happens if I miss an installment?
+      - Can I pay more than the required installment amount?
+      - How do I update my payment plan details?
+      - Are installment payments automatically deducted?
+      - Is it possible to pay for driving lessons in installments?
+      - Do you offer any payment plans?
+      - Can I pay half now and half later?
+      - How do your payment options work?
+      - Is there a no-interest installment plan available?
+      - Can I split the payment into parts?
+      - What are the terms for your payment plans?
+      - Can I pay in monthly installments?
+      - Are there any additional fees for installment payments?
+      - What happens if I miss a payment?
+      - What are your payment options?
+      - Do you offer payment plans?
+      - Can I make monthly payments?
+      - How do installment payments work?
+      - Are there any extra fees for paying in installments?
+      - Can I pay half now and half later?
+      - What is the down payment for installment plans?
+      - Can I pay in parts?
+      - Is there an interest-free payment plan?
+      - How many installments can I make?
+
+  - intent: inquire_refund_policy
+    examples: |
+      - Do you allow refunds?
+      - Can I get a refund if I cancel my lessons?
+      - Do you have a refund policy?
+      - What is your refund policy?
+      - Can I get my money back if I change my mind?
+      - How do I apply for a refund?
+      - Are there any conditions for refunds?
+      - Is the refund process easy?
+      - Can I get a partial refund?
+      - How long does it take to process a refund?
+      - What percentage of the fee is refundable?
+      - Do I need to provide any documents for a refund?
+      - Are refunds available for all courses?
+      - Can I get a refund if I miss a class?
+      - Are there any non-refundable fees?
+      - Can I transfer my refund to another course?
+      - Is there a deadline for requesting a refund?
+      - Can I speak to someone about the refund policy?
+      - What happens if the school cancels a class?
+      - Can I get a refund if I'm not satisfied with the course?
+      - Is there a cooling-off period for refunds?
+      - Are refunds processed back to the original payment method?
+      - Can I request a refund online?
+      - Is there a contact number for refund inquiries?
+      - Can I get my money back if I don't like the lessons?
+      - How does your refund process work?
+      - Are refunds available if I cancel my lessons?
+      - Is there a refund policy for missed classes?
+      - How long does it take to receive a refund?
+      - Are there any non-refundable fees?
+      - Can I get a partial refund if I cancel mid-course?
+      - What conditions apply to your refund policy?
+      - Can I transfer my refund to another course?
+      - Is there a deadline for requesting a refund?
+      - What is your cancellation policy?
+      - Are there any non-refundable fees?
+      - Can I get a full refund?
+      - How do I apply for a refund?
+      - Are refunds processed quickly?
+      - Can I get a refund if I miss a lesson?
+      - What is the process for getting a refund?
+      - Are there any conditions for refunds?
+      - Is there a deadline for refund requests?
+      - Can I transfer my refund to another student?
+
+  - intent: inquire_requirements
+    examples: |
+      - What are the requirements to enroll in a driving course?
+      - Do I need any documents to start lessons?
+      - What do I need to bring to my first lesson?
+      - Are there any prerequisites for joining your driving school?
+      - What are the requirements?
+      - Do I need to have a learner's permit?
+      - Are there age requirements for enrolling?
+      - Do I need prior driving experience?
+      - Is there a physical exam required?
+      - Do I need to pass any tests before enrolling?
+      - Are there specific requirements for international students?
+      - Can I enroll if I don't have a driving license?
+      - What forms of ID do I need to provide?
+      - Are there any medical requirements?
+      - Do I need to fill out any forms?
+      - Are there any requirements for night driving lessons?
+      - Can minors enroll in your courses?
+      - Do you need any specific documents from foreign nationals?
+      - Is a background check required?
+      - Are there different requirements for different courses?
+      - Do I need to provide proof of residency?
+      - Is there an interview process before enrolling?
+      - What are the requirements for advanced courses?
+      - Do I need a vision test?
+      - Are there any specific requirements for elderly drivers?
+      - What documents do I need to enroll in your driving school?
+      - Are there any prerequisites for your driving courses?
+      - Do I need a learner's permit to start lessons?
+      - What age do I need to be to enroll?
+      - Do I need prior driving experience?
+      - Are there any medical requirements for enrollment?
+      - Is a vision test required?
+      - Do I need a physical exam to join your school?
+      - What forms of identification are needed?
+      - Are there any specific requirements for international students?
+      - Do I need any documents to enroll?
+      - Are there age restrictions for your courses?
+      - Do I need a learner's permit to start?
+      - Are there any medical requirements?
+      - What forms of ID do I need?
+      - Do I need prior driving experience?
+      - Are there specific requirements for international students?
+      - Do I need to take a vision test?
+      - Is there a physical exam required?
+      - What are the prerequisites for advanced courses?
+
+  - intent: inquire_contact
+    examples: |
+      - How can I contact you?
+      - What is your phone number?
+      - Can I get your email address?
+      - How do I reach out for more information?
+      - What is the best way to contact you?
+      - Can you provide your contact details?
+      - Is there a specific person I should contact?
+      - Do you have a customer service line?
+      - Can I visit you in person?
+      - Do you have a contact form on your website?
+      - Can I schedule a call with someone?
+      - What is your office address?
+      - Can I contact you via social media?
+      - Do you have a live chat option?
+      - Is there a direct line for urgent inquiries?
+      - Can I get in touch with the instructors directly?
+      - Do you have a WhatsApp number?
+      - Can I text you for quick questions?
+      - Do you offer support via email?
+      - What are your contact hours?
+      - Is there a helpline number I can call?
+      - Do you have a toll-free number?
+      - Can I reach you on weekends?
+      - Is there a customer service email?
+      - Can I call you for more information?
+      - Is there an email address I can use to contact you?
+      - How do I get in touch with your office?
+      - Do you have a customer service hotline?
+      - Can I visit your office for inquiries?
+      - Is there a contact form on your website?
+      - Can I schedule a meeting with someone?
+      - Do you offer live chat support?
+      - What is the best way to reach you?
+      - Can I contact you through social media?
+      - Can I reach you by phone?
+      - Do you have a contact email?
+      - How can I get in touch with customer service?
+      - Can I visit your office in person?
+      - Is there a live chat option on your website?
+      - Can I contact you through social media?
+      - Do you have a WhatsApp number?
+      - What is the best way to contact you?
+      - Can I schedule a call with an instructor?
+      - Are you available for questions on weekends?
+
+  - intent: inquire_schedule
+    examples: |
+      - How can I schedule a lesson?
+      - What is the process for booking a driving lesson?
+      - an I book a lesson online?
+      - How do I make an appointment for a driving course?
+      - How do I schedule a lesson?
+      - Can I cancel my schedule?
+      - What is your scheduling process?
+      - Are there specific times available for lessons?
+      - Can I choose my lesson times?
+      - Do you offer flexible scheduling?
+      - How far in advance do I need to schedule?
+      - Can I reschedule a lesson if needed?
+      - Is there a penalty for rescheduling?
+      - hat happens if I miss a scheduled lesson?
+      - Can I schedule multiple lessons at once?
+      - Do you have weekend or evening slots?
+      - How do I confirm my lesson time?
+      - Are there peak times I should avoid?
+      - Can I schedule back-to-back lessons?
+      - How do I know if my schedule is confirmed?
+      - Can I see available slots online?
+      - Is there a waitlist if my preferred time is not available?
+      - Can I change my schedule mid-course?
+      - Are there any restrictions on the number of lessons I can book?
+      - How do I check my lesson schedule?
+      - How can I book a driving lesson?
+      - What is the process for scheduling a lesson?
+      - Can I change my lesson time if needed?
+      - Are there specific times available for booking lessons?
+      - Do you offer flexible scheduling options?
+      - How far in advance do I need to schedule a lesson?
+      - Can I book multiple lessons at once?
+      - Is there a penalty for rescheduling a lesson?
+      - How do I confirm my lesson booking?
+      - Can I see available lesson slots online?
+      - How do I book a lesson?
+      - Can I see available lesson times online?
+      - How do I reschedule a lesson?
+      - Are there any penalties for rescheduling?
+      - What is your cancellation policy for scheduled lessons?
+      - How far in advance do I need to book?
+      - Can I schedule lessons back-to-back?
+      - Are there evening slots available?
+      - Do you offer weekend lessons?
+      - Can I confirm my lesson time online?
+
+  - intent: inquire_instructor
+    examples: |
+      - Who are your driving instructors?
+      - Can you tell me about your instructors?
+      - Do you have certified instructors?
+      - Who will be teaching the driving lessons?
+      - Can I choose my instructor?
+      - What qualifications do your instructors have?
+      - Are your instructors experienced?
+      - Can I meet my instructor before starting lessons?
+      - How long have your instructors been teaching?
+      - Do you have female instructors?
+      - Are there any background checks done on the instructors?
+      - Can I switch instructors if I'm not comfortable?
+      - What teaching methods do your instructors use?
+      - Do your instructors have experience with nervous drivers?
+      - Are the instructors patient and friendly?
+      - Can I get feedback from previous students about the instructors?
+      - Do your instructors provide progress reports?
+      - Are there multilingual instructors available?
+      - How do you ensure the quality of your instructors?
+      - Can I have the same instructor throughout the course?
+      - What is the instructor-to-student ratio?
+      - How do you select your instructors?
+      - Are there any specializations among your instructors?
+      - Do the instructors receive ongoing training?
+      - Can I request a demo lesson with an instructor?
+      - Can you tell me more about your driving instructors?
+      - Can I choose my own instructor?
+      - How experienced are your driving instructors?
+      - Do you have female instructors?
+      - Are there multilingual instructors available?
+      - Can I switch instructors if needed?
+      - What qualifications do your instructors have?
+      - Can I meet my instructor before starting lessons?
+      - How do you select your instructors?
+      - Are your instructors licensed?
+      - How experienced are your instructors?
+      - Can I request a specific instructor?
+      - Do you have female instructors available?
+      - Can I change my instructor if needed?
+      - What qualifications do your instructors have?
+      - Are your instructors multilingual?
+      - How do you train your instructors?
+      - Can I meet my instructor before starting?
+      - Do your instructors provide progress reports?
+
+  - intent: inquire_credibility
+    examples: |
+      - Are you a licensed driving school?
+      - Is your driving school accredited by LTO?
+      - Do you have a permit to operate?
+      - Are your courses recognized by the government?
+      - an I trust your driving school?
+      - What accreditations does your driving school have?
+      - How long have you been in operation?
+      - Are your instructors certified?
+      - Do you have any testimonials from past students?
+      - Are your courses industry-recognized?
+      - Is your driving school insured?
+      - Do you have any awards or recognitions?
+      - Are you affiliated with any driving organizations?
+      - How can I verify your credentials?
+      - Do you have a business license?
+      - Are your instructors licensed by LTO?
+      - Do you have any safety certifications?
+      - Can I visit your school to check the facilities?
+      - Are your vehicles inspected regularly?
+      - What measures do you take to ensure student safety?
+      - Are your courses updated regularly?
+      - Do you have a quality assurance process?
+      - Is there a satisfaction guarantee?
+      - Can I see your accreditation certificates?
+      - Are your courses compliant with local regulations?
+      - Are your courses accredited by any organization?
+      - How long have you been in business?
+      - Do you have any testimonials from past students?
+      - Is your driving school licensed?
+      - Are your courses recognized by the government?
+      - Do you have any awards or recognitions?
+      - How can I verify your credentials?
+      - Are your instructors licensed and certified?
+      - Do you have any affiliations with driving organizations?
+      - What measures do you take to ensure quality?
+      - Are you an accredited driving school?
+      - How can I verify your credentials?
+      - Are your courses government-recognized?
+      - Do you have testimonials from past students?
+      - How long have you been in business?
+      - Do you have any awards or recognitions?
+      - What affiliations do you have?
+      - Are your courses industry-approved?
+      - Can I see your accreditation certificates?
+
+  - intent: inquire_location
+    examples: |
+      - Where is your driving school located?
+      - What is the address of your driving school?
+      - Can you give me directions to your office?
+      - Where can I find your driving school?
+      - What is the location of your office?
+      - Where are you located?
+      - Can you provide a map to your location?
+      - Is your driving school easy to find?
+      - Are you located near any landmarks?
+      - What is the nearest public transport to your location?
+      - Do you have parking facilities at your location?
+      - Are you located in a safe area?
+      - Is there a bus stop near your school?
+      - Can I get to your school by train?
+      - How far are you from the city center?
+      - Are there any accommodation options nearby?
+      - Can I walk to your school from the city?
+      - Do you have multiple locations?
+      - Are you located in a busy area?
+      - Can I find your location on Google Maps?
+      - Do you have branches in other cities?
+      - Are you near any major highways?
+      - Is there a landmark near your school?
+      - How far is your school from the nearest airport?
+      - Are there restaurants or cafes nearby?
+      - Can I take a taxi to your school?
+      - Can you provide your full address?
+      - Where exactly are you located?
+      - Is your driving school easy to find?
+      - Are you near any public transportation?
+      - Do you have parking available?
+      - Can I get to your school by bus or train?
+      - What is the nearest landmark to your location?
+      - How far are you from the city center?
+      - Are you located in a safe area?
+      - Do you have multiple branches?
+      - What is your exact address?
+      - Are you near any public transportation?
+      - Is there parking available at your location?
+      - Can I get directions to your office?
+      - Are you located in a safe area?
+      - Do you have branches in other cities?
+      - What is the nearest landmark to your school?
+      - How far are you from the city center?
+      - Can I find your location on Google Maps?
+      - Do you have multiple locations?

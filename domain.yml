@@ -1,0 +1,101 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - inquire_hours
+  - inquire_courses
+  - inquire_costs
+  - inquire_payment_modes
+  - inquire_payment
+  - inquire_refund_policy
+  - inquire_requirements
+  - inquire_contact
+  - inquire_schedule
+  - inquire_instructor
+  - inquire_location
+  - inquire_credibility
+  - affirm
+  - deny
+
+responses:
+  utter_greet:
+    - text: "Hello! How can I assist you today?"
+  
+  utter_goodbye:
+    - text: "Goodbye! Have a great day!"
+  
+  utter_affirm:
+    - text: "Great!"
+  
+  utter_deny:
+    - text: "Alright, no problem."
+
+  utter_inquire_hours:
+    - text: "Our hours of operation are Monday to Sunday, 9 AM to 5 PM."
+
+  utter_inquire_courses:
+    - text: "We offer the following courses: Theoretical Driving Course (TDC), Practical Driving Course (PDC), 4 Wheels Sedan, and Motorcycle."
+
+  utter_inquire_payment:
+    - text: "Yes, you can pay for lessons in installments. A 50% down payment is required upon registration, and the remaining 50% on the first day of classes."
+
+  utter_inquire_costs:
+    - text: |
+        PACKAGE 1
+        ₱2,000
+          - Face-to-Face Theoretical Driving Course + Practical Driving Course Motorcycle Advanced
+
+        PACKAGE 2
+        ₱4,300
+          - Face-to-Face Theoretical Driving Course + Practical Driving Course 4-Wheel Manual Transmission 8 hours
+
+        PACKAGE 3
+        ₱4,700
+          - Face-to-Face Theoretical Driving Course + Practical Driving Course 4-Wheel Automatic Transmission 8 hours
+
+        PACKAGE 4
+        ₱5,200
+          - Practical Driving Course 4-Wheel Manual Transmission 8 hours + Practical Driving Course Motorcycle Advanced
+
+        PACKAGE 5
+        ₱5,500
+          - Practical Driving Course 4-Wheel Automatic Transmission 8 hours + Practical Driving Course Motorcycle Advanced
+
+        PACKAGE 6
+        ₱5,600
+          - Face-to-Face Theoretical Driving Course + Practical Driving Course 4-Wheel Manual Transmission 8 hours + Practical Driving Course Motorcycle Advanced
+
+        PACKAGE 7
+        ₱6,000
+          - Face-to-Face Theoretical Driving Course + Practical Driving Course 4-Wheel Automatic Transmission 8 hours + Practical Driving Course Motorcycle Advanced
+
+  utter_inquire_payment_modes:
+    - text: "We accept GCash, Cash, and Bank Transfer."
+
+  utter_inquire_refund_policy:
+    - text: "Refunds are allowed if you notify the admin 2 days before the class. You need to visit our facility personally to validate your information, and the refund will be processed once validation is complete."
+
+  utter_inquire_requirements:
+    - text: "Please bring a Birth Certificate and a valid ID to enroll in a driving course."
+
+  utter_inquire_contact:
+    - text: "You can contact us at (02) 8716-4568, Sun: 0923-233-1986, Smart: 0969-038-3987, Gmail: b3sdrivingmanila@gmail.com, or visit our Facebook page: https://www.facebook.com/b3smanila., "
+
+  utter_inquire_schedule:
+    - text: "You can schedule a lesson by logging into our application."
+
+  utter_inquire_instructor:
+    - text: |
+        We currently have 6 instructors at B3S Driving School:
+        - Sir Cy and Sir Mark focus on motorcycles.
+        - Sir Ian and Sir Eric handle 4-wheel vehicles.
+        - Sir Felix and Sir Fher specialize in the Theoretical Driving Course (TDC).
+
+        Yes, all our instructors are certified and experienced. Depending on the course, you will be taught by our specialized instructors: Sir Cy, Sir Mark, Sir Ian, Sir Eric, Sir Felix, or Sir Fher. Instructor assignments operate on a schedule, but you can discuss preferences when booking your lessons.
+
+  utter_inquire_location:
+    - text: "We are located at 537 Santol Street Sampaloc, Manila 1008 Metro Manila Philippines."
+
+  utter_inquire_credibility:
+    - text: "We are a registered driving school with the Land Transportation Office (LTO)"

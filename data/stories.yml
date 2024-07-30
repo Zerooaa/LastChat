@@ -1,0 +1,125 @@
+version: "3.1"
+
+stories:
+- story: greet
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- story: goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: inquire_hours
+  steps:
+  - intent: inquire_hours
+  - action: utter_inquire_hours
+
+- story: inquire_courses
+  steps:
+  - intent: inquire_courses
+  - action: utter_inquire_courses
+
+- story: inquire_costs
+  steps:
+  - intent: inquire_costs
+  - action: utter_inquire_costs
+
+- story: inquire_payment_modes
+  steps:
+  - intent: inquire_payment_modes
+  - action: utter_inquire_payment_modes
+
+- story: inquire_payment
+  steps:
+  - intent: inquire_payment
+  - action: utter_inquire_payment
+
+- story: inquire_refund_policy
+  steps:
+  - intent: inquire_refund_policy
+  - action: utter_inquire_refund_policy
+
+- story: inquire_requirements
+  steps:
+  - intent: inquire_requirements
+  - action: utter_inquire_requirements
+
+- story: inquire_contact
+  steps:
+  - intent: inquire_contact
+  - action: utter_inquire_contact
+
+- story: inquire_schedule
+  steps:
+  - intent: inquire_schedule
+  - action: utter_inquire_schedule
+
+- story: inquire_instructor
+  steps:
+  - intent: inquire_instructor
+  - action: utter_inquire_instructor
+
+- story: inquire_location
+  steps:
+  - intent: inquire_location
+  - action: utter_inquire_location
+
+- story: inquire_credibility
+  steps:
+  - intent: inquire_credibility
+  - action: utter_inquire_credibility
+
+- story: greet and inquire payment with affirm
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: inquire_payment
+  - action: utter_inquire_payment
+  - intent: affirm
+  - action: utter_affirm
+
+- story: greet and inquire payment with deny
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: inquire_payment
+  - action: utter_inquire_payment
+  - intent: deny
+  - action: utter_deny
+
+- story: greet and inquire location
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: inquire_location
+  - action: utter_inquire_location
+
+- story: greet and inquire credibility
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: inquire_credibility
+  - action: utter_inquire_credibility
+
+- story: greet and inquire contact
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: inquire_contact
+  - action: utter_inquire_contact
+
+- story: greet and inquire requirements
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: inquire_requirements
+  - action: utter_inquire_requirements
+
+- story: greet and inquire schedule
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: inquire_schedule
+  - action: utter_inquire_schedule
