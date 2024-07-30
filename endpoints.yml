@@ -1,2 +1,9 @@
+# endpoints.yml
+
 action_endpoint:
-  url: "http://localhost:5055/webhook"
+  url: "http://localhost:5055/webhook"  # Change this if your action server URL is different
+
+# Add this section if it doesn't already exist
+cors:
+  - "http://localhost:4200"  # Example of allowed origin
+  - "http://127.0.0.1:5500"
